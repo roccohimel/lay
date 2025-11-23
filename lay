@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ -z "$TMUX" ]; then
+	tmux new-session -d
+	tmux send-keys "$0 inside" C-m
+	tmux attach
+	exit
+fi
+
+if [ "$1" = "inside" ]; then
+	tmux set -g pane-border-style fg=blue
+	tmux set -g pane-active-border-style fg=cyan
+	tmux set -g status-bg blue
+	tmux set -g status-fg white
+	tmux split-window -h
+	tmux send-keys "clear" C-m
+	tmux send-keys "ls ~" C-m
+	tmux select-pane -L
+	tmux send-keys "clear"
+	tmux split-window -v
+	tmux send-keys "clear" C-m
+	tmux send-keys "htop" C-m
+	tmux select-pane -R
+fi
