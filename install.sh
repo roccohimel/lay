@@ -1,5 +1,6 @@
 #!/bin/bash
 #  Copyright (C) Rocco Himel
+sudo echo "Granted root permission."
 echo "Installing tmux..."
 cd ~
 git clone https://github.com/tmux/tmux.git
