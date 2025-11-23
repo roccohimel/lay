@@ -1,4 +1,4 @@
-# lay
+# Lay
 prebult tmux session
 
 How to install:
@@ -18,7 +18,7 @@ brew install fastfetch htop # If on MacOS
 ```
 if this doesnt work, try bulding them from source.
 
-Second, install lay:
+Second, install Lay
 ```
 bash install.sh
 ```
