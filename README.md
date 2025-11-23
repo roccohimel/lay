@@ -1,0 +1,2 @@
+# lay
+prebult tmux session
