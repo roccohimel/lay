@@ -7,9 +7,6 @@ git clone https://github.com/roccohimel/lay.git
 cd ~/lay
 bash install.sh
 ```
-Check if installed:
-```
-which tmux
-which lay
-which tks
-```
+it should work.
+
+for support, email: roccohimel@proton.me
