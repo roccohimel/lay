@@ -15,7 +15,8 @@ if [ "$1" = "inside" ]; then
 	tmux send-keys "clear" C-m
 	tmux send-keys "ls ~" C-m
 	tmux select-pane -L
-	tmux send-keys "clear"
+	tmux send-keys "clear" C-m
+	tmux send-keys "fastfetch" C-m
 	tmux split-window -v
 	tmux send-keys "clear" C-m
 	tmux send-keys "htop" C-m
