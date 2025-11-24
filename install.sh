@@ -16,6 +16,7 @@ sudo cp ~/lay/lay-uninst /usr/local/bin -v
 sudo mandb
 sudo chmod +x /usr/local/bin/lay -v
 sudo chmod +x /usr/local/bin/tks -v
+sudo chmod +x /usr/local/bin/lay-uninst -v
 echo "Cleaning up..."
 rm -rf ~/tmux -v
 echo "Done!"
