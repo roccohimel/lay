@@ -18,5 +18,6 @@ sudo chmod +x /usr/local/bin/lay -v
 sudo chmod +x /usr/local/bin/tks -v
 sudo chmod +x /usr/local/bin/lay-uninst -v
 echo "Cleaning up..."
-rm -rf ~/tmux -v
+sudo rm -rf ~/tmux -v
+cd
 echo "Done!"
