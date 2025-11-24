@@ -12,6 +12,7 @@ echo "Installing Lay..."
 sudo cp ~/lay/lay /usr/local/bin -v
 sudo cp ~/lay/tks /usr/local/bin -v
 sudo cp ~/lay/lay.1 /usr/share/man/man1 -v
+sudo cp ~/lay/lay-uninst /usr/local/bin -v
 sudo mandb
 sudo chmod +x /usr/local/bin/lay -v
 sudo chmod +x /usr/local/bin/tks -v
