@@ -5,8 +5,8 @@ echo "Installing tmux..."
 cd ~
 git clone https://github.com/tmux/tmux.git
 cd ~/tmux
-sh autogen.sh
-./configure && make
+sudo sh ~/tmux/autogen.sh
+sudo ~/tmux/configure && sudo make
 sudo install -m 755 ~/tmux/tmux /usr/local/bin/tmux
 echo "Installing Lay..."
 sudo cp ~/lay/lay /usr/local/bin -v
