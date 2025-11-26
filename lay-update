@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /usr/local/lib/lay
+git pull
+git restore .
+lay-reinst
