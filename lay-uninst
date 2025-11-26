@@ -2,4 +2,7 @@
 sudo rm $(which lay) -v
 sudo rm $(which tks) -v 
 sudo rm $(which tmux) -v
+sudo rm $(which lay-reinst) -v
 sudo rm /usr/share/man/man1/lay.1 -v
+sudo rm -rf /usr/local/lib/lay -v
+sudo rm $(which lay-uninst) -v

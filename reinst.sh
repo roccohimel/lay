@@ -9,12 +9,11 @@ sudo sh ~/tmux/autogen.sh
 sudo ~/tmux/configure && sudo make
 sudo install -m 755 ~/tmux/tmux /usr/local/bin/tmux
 echo "Installing Lay..."
-sudo cp ~/lay/lay /usr/local/bin -v
-sudo cp ~/lay/tks /usr/local/bin -v
-sudo cp ~/lay/lay.1 /usr/share/man/man1 -v
-sudo cp ~/lay/lay-uninst /usr/local/bin -v
-sudo cp ~/lay/lay-reinst /usr/local/bin -v
-sudo cp -r ~/lay /usr/local/lib -v
+sudo cp /usr/local/lib/lay/lay /usr/local/bin -v
+sudo cp /usr/local/lib/lay/tks /usr/local/bin -v
+sudo cp /usr/local/lib/lay/lay.1 /usr/share/man/man1 -v
+sudo cp /usr/local/lib/lay/lay-uninst /usr/local/bin -v
+sudo cp /usr/local/lib/lay/lay-reinst /usr/local/bin -v
 sudo mandb
 sudo chmod +x /usr/local/bin/lay -v
 sudo chmod +x /usr/local/bin/tks -v

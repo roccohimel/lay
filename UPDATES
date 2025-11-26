@@ -1,28 +1,3 @@
-Lay | Copyright (C) 2025 Rocco Himel
-
-Lay version 0.3
-
-For support, please email: roccohimel@proton.me
-
-HOW TO CONFIGURE LAY:
-
-Lay is tmux based. run "sudo nano $(which lay)" to configure the shell script. You can change pane arrangement, color, rc, everything!
-
-- COMMANDS:
-tks:
-tks stands for tmux kill-server. It kills any running tmux sessions
-
-lay:
-starts Lay
-
-lay-reinst:
-removes tks, lay, tmux, and manpage, and reinstalls Lay from /usr/local/lib/lay
-
-lay-uninst:
-removes tks, lay, tmux, manpage, and the saved Lay clone (/usr/local/lib/lay)
-
-
-- UPDATES: What has changed?
 Lay v0.3
 created lay-reinst | reinstalls Lay from ~/lay
 updated install.sh | you can now install lay-reinst
@@ -34,3 +9,4 @@ updated lay-reinst | fixed bug
 updated lay-uninst | fixed bug
 updated lay-uninst | added uninstalling lay-reinst and lay-uninst
 updated lay | added window colors and session names
+
