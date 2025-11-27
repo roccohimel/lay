@@ -14,14 +14,12 @@ sudo cp ~/lay/tks /usr/local/bin -v
 sudo cp ~/lay/lay.1 /usr/share/man/man1 -v
 sudo cp ~/lay/lay-uninst /usr/local/bin -v
 sudo cp ~/lay/lay-reinst /usr/local/bin -v
-sudo cp ~/lay/lay-update /usr/local/bin -v
 sudo cp -r ~/lay /usr/local/lib -v
 sudo mandb
 sudo chmod +x /usr/local/bin/lay -v
 sudo chmod +x /usr/local/bin/tks -v
 sudo chmod +x /usr/local/bin/lay-uninst -v
 sudo chmod +x /usr/local/bin/lay-reinst -v
-sudo chmod +x /usr/local/bin/lay-update -v
 echo "Cleaning up..."
 cd
 echo "Done!"
