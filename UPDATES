@@ -1,5 +1,2 @@
-Lay v0.3.1
-added lay-update | restores /usr/local/lib/lay with latest git changes and reinstalls lay
-updated install.sh | adapts to lay-update
-updated reinst.sh | adapts to lay-update
-updated lay.1 | adapts to UPDATES
+Lay v0.3.2
+- Added support for Alpine Linux

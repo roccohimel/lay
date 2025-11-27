@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo rm $(which lay)
+sudo rm $(which tmux)
+sudo rm $(which tks)
+bash /usr/local/lib/lay/reinst-alpine.sh

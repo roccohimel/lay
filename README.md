@@ -2,6 +2,7 @@
 prebult tmux session
 
 How to install:
+IF ON ALPINE, PLEASE SKIP
 
 First, install htop and fastfetch
 ```
@@ -18,7 +19,12 @@ brew install fastfetch htop # If on MacOS
 ```
 if this doesnt work, try bulding them from source.
 
-Second, install Lay
+If on Alpine, run:
+```
+bash alpine.sh
+```
+
+If not, run:
 ```
 bash install.sh
 ```
