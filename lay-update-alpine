@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Updating Lay..."
+lay-uninst
+sudo rm -rf ~/lay -v
+git clone https://github.com/roccohimel/lay
+sudo mv -r ~/lay -v
+bash /usr/local/lib/lay/alpine.sh

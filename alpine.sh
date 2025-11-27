@@ -15,13 +15,16 @@ cp ~/lay/tks /usr/local/bin -v
 cp ~/lay/lay.1 /usr/share/man/man1 -v
 cp ~/lay/lay-uninst /usr/local/bin -v
 cp ~/lay/lay-reinst-alpine /usr/local/bin -v
+cp ~/lay/lay-update-alpine /usr/local/bin -v
 cp -r ~/lay /usr/local/lib -v
 chmod +x /usr/local/bin/lay -v
 chmod +x /usr/local/bin/tks -v
 chmod +x /usr/local/bin/lay-uninst -v
+chmod +x /usr/local/bin/lay-reinst-alpine -v
 chmod +x /usr/local/bin/lay-reinst-alpine -v
 echo "Cleaning up..."
 cd
 echo "Done!"
 echo "If you want to reinstall Lay, please run 'lay-reinst-alpine'"
 echo "If you want to uninstall Lay, please run 'lay-uninst'"
+echo "If you want to update Lay, please run 'lay-update-alpine'"
