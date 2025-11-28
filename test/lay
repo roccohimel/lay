@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# starts new tmux session if not in tmux already
+if [ -z "$TMUX" ]; then
+	tmux new-session -d
+	tmux send-keys "$0 inside" C-m
+	tmux attach
+	exit
+fi
+
+# all the configs
+if [ "$1" = "inside" ]; then
+	bash ~/lay/test/lay-init.sh
+fi
