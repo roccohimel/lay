@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# starts new tmux session if not in tmux already
 if [ -z "$TMUX" ]; then
 	tmux new-session -d
 	tmux send-keys "$0 inside" C-m
@@ -6,6 +8,7 @@ if [ -z "$TMUX" ]; then
 	exit
 fi
 
+# all the configs
 if [ "$1" = "inside" ]; then
 	tmux rename-session lay # session name
 	tmux set -g status-style bg=black,fg=white # term colors
@@ -15,6 +18,7 @@ if [ "$1" = "inside" ]; then
 	tmux set -g pane-active-border-style fg=cyan # active pane colors
 	tmux set -g status-bg blue # status bar color
 	tmux set -g status-fg white # status bar text color
+	# select panes / rc
 	tmux split-window -h
 	tmux send-keys "clear" C-m
 	tmux send-keys "ls ~" C-m

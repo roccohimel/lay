@@ -1,4 +1,5 @@
 #!/bin/bash
+# uninstall everything
 sudo rm $(which lay) -v
 sudo rm $(which tks) -v 
 sudo rm $(which tmux) -v

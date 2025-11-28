@@ -1,5 +1,6 @@
 #!/bin/bash
 #  Copyright (C) Rocco Himel
+#  this is the install script for Alpine Linux
 echo "RUN AS ROOT!"
 echo "Installing fastfetch..."
 apk add fastfetch
@@ -10,13 +11,15 @@ apk add tmux
 echo "Installing sudo..."
 apk add sudo
 echo "Installing Lay..."
+# copy deps to /usr/local (/bin)
 cp ~/lay/lay /usr/local/bin -v
 cp ~/lay/tks /usr/local/bin -v
 cp ~/lay/lay.1 /usr/share/man/man1 -v
 cp ~/lay/lay-uninst /usr/local/bin -v
 cp ~/lay/lay-reinst-alpine /usr/local/bin -v
 cp ~/lay/lay-update-alpine /usr/local/bin -v
-cp -r ~/lay /usr/local/lib -v
+cp -r ~/lay /usr/local/lib -v # copy clone to /usr/local/lib
+# makes deps executable
 chmod +x /usr/local/bin/lay -v
 chmod +x /usr/local/bin/tks -v
 chmod +x /usr/local/bin/lay-uninst -v

@@ -1,5 +1,7 @@
 #!/bin/bash
+# remove deps
 sudo rm $(which lay)
 sudo rm $(which tmux)
 sudo rm $(which tks)
+# reinstall deps
 bash /usr/local/lib/lay/reinst-alpine.sh
