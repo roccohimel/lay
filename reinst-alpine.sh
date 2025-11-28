@@ -11,12 +11,12 @@ echo "Installing sudo..."
 apk add sudo
 echo "Installing Lay..."
 cp /usr/local/lib/lay/lay /usr/local/bin -v
-cp /usr/local/lib/lay/tks /usr/local/bin -v
+cp /usr/local/lib/lay/lay-tks /usr/local/bin -v
 cp /usr/local/lib/lay.1 /usr/share/man/man1 -v
 cp /usr/local/lib/lay/lay-uninst /usr/local/bin -v
 cp /usr/local/lib/lay/lay-reinst-alpine /usr/local/bin -v
 chmod +x /usr/local/bin/lay -v
-chmod +x /usr/local/bin/tks -v
+chmod +x /usr/local/bin/lay-tks -v
 chmod +x /usr/local/bin/lay-uninst -v
 chmod +x /usr/local/bin/lay-reinst-alpine -v
 echo "Cleaning up..."
